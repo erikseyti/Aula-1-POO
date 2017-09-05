@@ -43,17 +43,18 @@ public class Main {
 		colecao.forEach(System.out::println); //java 8
 		
 		*/
-		
+		/*
 		Produto p1 = new Produto("456456456", "Mouse", 20, 5);
 		Produto p2 = new Produto("4564564564", "Teclado", 15, 10);
 		Produto p3 = new Produto("456456456", "Mouse", 20, 5);
-		Produto p4 = new Produto("456456456", "Mouze", 22, 6);
+		Produto p4 = new Produto("456476456", "Mouze", 22, 6);
 		//p1 = p3;
 		
 		//List<Produto> produtos = new ArrayList<>();
 		//Collection<Produto> produtos = new ArrayList<>();
 		Collection<Produto> produtos = new HashSet<>();
 		
+		// esta fazendo a comparação e, cima do ean do produto
 		if(!produtos.contains(p1)){
 			produtos.add(p1);
 		}
@@ -64,6 +65,10 @@ public class Main {
 		if(!produtos.contains(p3))
 		{
 			produtos.add(p3);
+		}
+		if(!produtos.contains(p4))
+		{
+			produtos.add(p4);
 		}
 				
 		produtos.forEach(System.out::println);
@@ -86,7 +91,21 @@ public class Main {
 		{
 			System.out.println("São Diferentes EQUALS");
 		}
+		*/
 		
+		Competidor c1 = new Gato();
+		Competidor c2 = new Pessoa();
+		Collection<Competidor> competidores = new ArrayList<>();
+		competidores.add(c1);
+		competidores.add(c2);
+		
+		for (Competidor competidor : competidores)
+		{
+			competidor.correr();
+		}
 	}
+	
+		
 // control + f6
 }
+	

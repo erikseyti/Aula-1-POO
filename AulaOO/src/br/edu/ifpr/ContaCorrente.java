@@ -1,7 +1,7 @@
 package br.edu.ifpr;
 
 public class ContaCorrente {
-	/*
+	/* TODO
 	 * Classe Conta Corrente
 	 * 	- Para Permitir a manipulação e controle de conta de acesso bancario
 	 * 	- Atributos: Saldo
@@ -11,6 +11,7 @@ public class ContaCorrente {
 
 	private double saldo;
 	private String numeroConta;
+	
 	
 	public ContaCorrente(String numeroConta) {
 		// TODO Auto-generated constructor stub
